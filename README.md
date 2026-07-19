@@ -1,5 +1,12 @@
 # savdoh
 
+[![CI](https://github.com/ImSavsis/savdoh/actions/workflows/ci.yml/badge.svg)](https://github.com/ImSavsis/savdoh/actions/workflows/ci.yml)
+[![Coverage](https://codecov.io/gh/ImSavsis/savdoh/branch/master/graph/badge.svg)](https://codecov.io/gh/ImSavsis/savdoh)
+[![pypi](https://img.shields.io/pypi/v/savdoh.svg)](https://pypi.org/project/savdoh/)
+[![downloads](https://img.shields.io/pypi/dm/savdoh.svg)](https://pypi.org/project/savdoh/)
+[![versions](https://img.shields.io/pypi/pyversions/savdoh.svg)](https://pypi.org/project/savdoh/)
+[![license](https://img.shields.io/github/license/ImSavsis/savdoh.svg)](https://github.com/ImSavsis/savdoh/blob/master/LICENSE)
+
 DNS-over-HTTPS резолвер для питона. ноль зависимостей — весь HTTPS через стандартный `http.client`+`ssl`. провайдер/DPI видит только твой HTTPS к cloudflare, а не голые DNS-запросы.
 
 ```mermaid

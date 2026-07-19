@@ -16,6 +16,10 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install -e .[dev]
-      - run: pytest
+      - run: pytest --cov=savdoh --cov-report=xml
+      - uses: codecov/codecov-action@v4
+        if: matrix.python-version == '3.12'
+        with:
+          files: ./coverage.xml
       - run: python -m build
       - run: python -m twine check dist/*
