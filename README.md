@@ -38,6 +38,12 @@ import pydoh
 pydoh.patch_socket()
 ```
 
+## документация
+
+- [quickstart](docs/quickstart.md) — установка, базовое использование, свой провайдер
+- [api](docs/api.md) — все функции с параметрами
+- [faq](docs/faq.md) — зачем это надо, что делать если cloudflare забанят, законно ли
+
 ## фичи
 
 - zero deps, только stdlib
