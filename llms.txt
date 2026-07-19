@@ -1,4 +1,4 @@
-# savdoh
+# pydoh
 
 > Zero-dependency DNS-over-HTTPS resolver for Python. Ships a simple resolve() function and an optional socket.getaddrinfo patch that makes any existing Python networking code (requests, aiohttp, anything on sockets) resolve over DoH transparently.
 
@@ -6,10 +6,10 @@ Pure standard library, uses http.client and ssl for the HTTPS leg. Falls back ac
 
 ## Docs
 
-- [README](https://github.com/ImSavsis/savdoh/blob/master/README.md): install, usage, feature list
-- [src/savdoh/resolver.py](https://github.com/ImSavsis/savdoh/blob/master/src/savdoh/resolver.py): core resolve logic with provider fallback and caching
-- [src/savdoh/patch.py](https://github.com/ImSavsis/savdoh/blob/master/src/savdoh/patch.py): socket.getaddrinfo monkeypatch
-- [src/savdoh/wire.py](https://github.com/ImSavsis/savdoh/blob/master/src/savdoh/wire.py): minimal DNS wire format encode/decode
+- [README](https://github.com/ImSavsis/pydoh/blob/master/README.md): install, usage, feature list
+- [src/pydoh/resolver.py](https://github.com/ImSavsis/pydoh/blob/master/src/pydoh/resolver.py): core resolve logic with provider fallback and caching
+- [src/pydoh/patch.py](https://github.com/ImSavsis/pydoh/blob/master/src/pydoh/patch.py): socket.getaddrinfo monkeypatch
+- [src/pydoh/wire.py](https://github.com/ImSavsis/pydoh/blob/master/src/pydoh/wire.py): minimal DNS wire format encode/decode
 
 ## Notes
 

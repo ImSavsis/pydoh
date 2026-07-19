@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "savdoh"
+name = "pydoh"
 version = "0.1.0"
 description = "zero-dependency DNS over HTTPS resolver for Python, with an optional socket.getaddrinfo patch"
 readme = "README.md"
@@ -23,11 +23,11 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ImSavsis/savdoh"
-Issues = "https://github.com/ImSavsis/savdoh/issues"
+Homepage = "https://github.com/ImSavsis/pydoh"
+Issues = "https://github.com/ImSavsis/pydoh/issues"
 
 [project.optional-dependencies]
 dev = ["pytest", "pytest-cov", "build", "twine"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/savdoh"]
+packages = ["src/pydoh"]

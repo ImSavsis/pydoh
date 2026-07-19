@@ -1,6 +1,6 @@
 import time
 
-from savdoh.cache import TTLCache
+from pydoh.cache import TTLCache
 
 
 def test_cache_hit():

@@ -1,4 +1,4 @@
-from savdoh import resolve
+from pydoh import resolve
 
 
 def test_live_resolve_example_com():
