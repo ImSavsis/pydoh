@@ -1,6 +1,6 @@
 import socket
 
-from pydoh.patch import patch_socket, unpatch_socket
+from savdoh.patch import patch_socket, unpatch_socket
 
 
 def test_patch_and_unpatch_restores_original():

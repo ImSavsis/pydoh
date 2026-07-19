@@ -1,34 +1,34 @@
-# pydoh
+# savdoh
 
 DNS-over-HTTPS резолвер для питона. ноль зависимостей — весь HTTPS через стандартный `http.client`+`ssl`. провайдер/DPI видит только твой HTTPS к cloudflare, а не голые DNS-запросы.
 
 ```mermaid
 sequenceDiagram
-    App->>pydoh: resolve("example.com")
-    pydoh->>Cloudflare: DNS-запрос внутри HTTPS POST
-    Cloudflare-->>pydoh: ответ внутри HTTPS
-    pydoh-->>App: ["93.184.216.34"]
+    App->>savdoh: resolve("example.com")
+    savdoh->>Cloudflare: DNS-запрос внутри HTTPS POST
+    Cloudflare-->>savdoh: ответ внутри HTTPS
+    savdoh-->>App: ["93.184.216.34"]
 ```
 
 ## установка
 
 ```
-pip install pydoh
+pip install savdoh
 ```
 
 ## юзать
 
 ```python
-import pydoh
+import savdoh
 
-ips = pydoh.resolve("example.com")
+ips = savdoh.resolve("example.com")
 ```
 
 или подменить резолвинг вообще везде в питоне одной строкой — `requests`, `aiohttp`, что угодно на сокетах будет резолвить через DoH:
 
 ```python
-import pydoh
-pydoh.patch_socket()
+import savdoh
+savdoh.patch_socket()
 ```
 
 ## фичи

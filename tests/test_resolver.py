@@ -1,7 +1,7 @@
 import struct
 
-import pydoh.resolver as resolver_module
-from pydoh.resolver import ResolveError, resolve
+import savdoh.resolver as resolver_module
+from savdoh.resolver import ResolveError, resolve
 
 
 def _make_response(query_id, ip):

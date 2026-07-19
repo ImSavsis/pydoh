@@ -1,6 +1,6 @@
 import struct
 
-from pydoh.wire import build_query, parse_response
+from savdoh.wire import build_query, parse_response
 
 
 def test_build_query_shape():
